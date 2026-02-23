@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.bookexplorer"
@@ -22,6 +24,11 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.bookexplorer"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "287ad837-d8dc-4113-99bb-39f077a37e02"
+      }
     }
   }
 }
