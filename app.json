@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Book Explorer",
+    "slug": "book-explorer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/splash.jpg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bookexplorer"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.bookexplorer"
+    }
+  }
+}
