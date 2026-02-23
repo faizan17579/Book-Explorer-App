@@ -53,20 +53,22 @@ npm test
 
 ## Build APK (Android)
 
-1. Install EAS CLI (one time):
-   ```bash
-   npm install -g eas-cli
-   ```
-2. Log in: `eas login`
-3. Build APK:
-   ```bash
-   eas build --platform android --profile preview
-   ```
-4. Or local build with Expo:
-   ```bash
-   npx expo run:android
-   ```
-   Then use Android Studio to build a signed APK, or run `eas build` for a downloadable APK.
+**Option 1 – EAS Build (recommended, get a download link):**
+
+1. Install EAS CLI once:  
+   `npm install -g eas-cli`
+2. Log in (free Expo account):  
+   `eas login`
+3. From project root, run:  
+   `eas build --platform android --profile preview`
+4. When the build finishes, EAS will give you a link to download the APK. Install it on your device or share the link.
+
+**Option 2 – Local build (APK on your machine):**
+
+1. Install Android Studio and set up the Android SDK.
+2. From project root:  
+   `npx expo run:android`
+3. This builds a debug APK. The path is shown in the terminal (e.g. `android/app/build/outputs/apk/debug/app-debug.apk`).
 
 ## Project structure
 
@@ -77,10 +79,3 @@ src/
   services/      bookService (Google Books), nytService (NYTimes)
   types/         Book, BestsellerInfo
 ```
-
-## Deliverables
-
-- **Code**: This repository (organized and documented)
-- **README**: This file (setup and usage)
-- **Video**: Record the app (search, open a book, show ratings and bestseller badge)
-- **APK**: Build with `eas build --platform android --profile preview` and share the download link
